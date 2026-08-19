@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karachi Welding Service - Main Gate, Safety Grill, Window & Door Fabrication in Liaquatabad Karachi</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Karachi Welding Service in Liaquatabad Mohammadiya Town. Expert Gate Welding, Grill Work, Window Frame Repair, Iron Door Fabrication & Emergency Custom Welding in Karachi. Call/WhatsApp 0304-4776056.">
+    <meta name="keywords" content="Welding service Karachi, Gate welding Liaquatabad, Grill welding work Karachi, Window welding, Iron Door fabrication, Steel fabricator Mohammadiya Town, Emergency welding Karachi">
+    <meta name="author" content="Karachi Welding Service">
+    
+    <!-- Google Fonts & Material Symbols -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            500: '#1e3a8a',
+                            600: '#1e293b',
+                            700: '#0f172a',
+                            800: '#020617',
+                        },
+                        accent: {
+                            500: '#ea580c',
+                            600: '#c2410c',
+                        },
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .material-symbols-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .pattern-grid {
+            background-image: radial-gradient(rgba(234, 88, 12, 0.15) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .tab-content {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .tab-content.active {
+            display: block;
+            opacity: 1;
+        }
+        .spark-glow {
+            box-shadow: 0 0 25px rgba(234, 88, 12, 0.35);
+        }
+        .reveal {
+            opacity: 1;
+        }
+        #tab-home .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            will-change: opacity, transform;
+        }
+        #tab-home .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-accent-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Mobile Drawer Backdrop -->
+    <div id="mobile-backdrop" onclick="closeMobileMenu()" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-[998] transition-opacity duration-300 opacity-0 pointer-events-none"></div>
+
+    <!-- Mobile Off-Canvas Drawer -->
+    <div id="mobile-drawer" class="fixed top-0 left-0 bottom-0 z-[999] h-screen h-[100dvh] w-[85vw] max-w-[360px] bg-slate-950 text-white p-6 shadow-2xl transition-transform duration-300 ease-in-out -translate-x-full flex flex-col justify-between overflow-y-auto">
+        <!-- Header Section -->
+        <div class="space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <a href="javascript:void(0)" onclick="switchTab('home'); closeMobileMenu()" class="flex items-center py-1" aria-label="Karachi Welding Service Home">
+                    <img src="assets/logo-light-text.png" alt="Karachi Welding Service Logo" class="h-10 w-auto object-contain">
+                </a>
+                <button onclick="closeMobileMenu()" aria-label="Close menu" class="p-2 text-slate-400 hover:text-white hover:bg-slate-900 rounded-xl transition-all">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="space-y-2">
+                <button id="nav-mob-home" onclick="switchTab('home'); closeMobileMenu()" class="mob-nav-btn w-full text-left font-semibold text-slate-200 hover:text-accent-500 px-4 py-3.5 rounded-xl transition-all flex items-center gap-3.5 hover:bg-slate-900 bg-brand-700/50 text-accent-500 font-bold">
+                    <span class="material-symbols-outlined text-xl">home</span>
+                    <span class="text-sm">Home</span>
+                </button>
+                <button id="nav-mob-about" onclick="switchTab('about'); closeMobileMenu()" class="mob-nav-btn w-full text-left font-semibold text-slate-200 hover:text-accent-500 px-4 py-3.5 rounded-xl transition-all flex items-center gap-3.5 hover:bg-slate-900">
+                    <span class="material-symbols-outlined text-xl">info</span>
+                    <span class="text-sm">About Us</span>
+                </button>
+                <button id="nav-mob-services" onclick="switchTab('services'); closeMobileMenu()" class="mob-nav-btn w-full text-left font-semibold text-slate-200 hover:text-accent-500 px-4 py-3.5 rounded-xl transition-all flex items-center gap-3.5 hover:bg-slate-900">
+                    <span class="material-symbols-outlined text-xl">construction</span>
+                    <span class="text-sm">Services</span>
+                </button>
+                <button id="nav-mob-contact" onclick="switchTab('contact'); closeMobileMenu()" class="mob-nav-btn w-full text-left font-semibold text-slate-200 hover:text-accent-500 px-4 py-3.5 rounded-xl transition-all flex items-center gap-3.5 hover:bg-slate-900">
+                    <span class="material-symbols-outlined text-xl">call</span>
+                    <span class="text-sm">Contact Us</span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Bottom Section -->
+        <div class="pt-6 border-t border-slate-800 space-y-4">
+            <button onclick="openWhatsAppQuote('General Welding Query - Karachi Client'); closeMobileMenu()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white py-3.5 rounded-xl font-bold text-sm text-center shadow-lg transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Order
+            </button>
+
+            <!-- Quick Action Icon Row -->
+            <div class="grid grid-cols-3 gap-2 pt-1">
+                <a href="tel:03044776056" class="flex flex-col items-center justify-center gap-1 p-2.5 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group">
+                    <span class="material-symbols-outlined text-lg text-accent-500 group-hover:scale-110 transition-transform">call</span>
+                    <span class="text-[10px] font-medium">Call</span>
+                </a>
+                <a href="https://wa.me/923044776056?text=Hi%20Karachi%20Welding%20Service,%20I%20need%20welding%20work." target="_blank" class="flex flex-col items-center justify-center gap-1 p-2.5 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group">
+                    <i class="fa-brands fa-whatsapp text-lg text-emerald-400 group-hover:scale-110 transition-transform"></i>
+                    <span class="text-[10px] font-medium">WhatsApp</span>
+                </a>
+                <a href="javascript:void(0)" onclick="switchTab('contact'); closeMobileMenu()" class="flex flex-col items-center justify-center gap-1 p-2.5 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white rounded-xl transition-all group">
+                    <span class="material-symbols-outlined text-lg text-amber-500 group-hover:scale-110 transition-transform">location_on</span>
+                    <span class="text-[10px] font-medium">Visit Us</span>
+                </a>
+            </div>
+            <p class="text-[10px] text-slate-500 text-center">Mohammadiya Town, Liaquatabad, Karachi</p>
+        </div>
+    </div>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2.5 px-4 sm:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 flex-wrap justify-center sm:justify-start">
+                <span class="flex items-center gap-1.5 text-slate-200">
+                    <span class="material-symbols-outlined text-accent-500 text-sm">location_on</span> 
+                    Mohammadiya Town, Liaquatabad, Karachi | Doorstep Service Across All Karachi Areas
+                </span>
+                <span class="hidden md:inline text-slate-700">|</span>
+                <span class="hidden md:flex items-center gap-1.5">
+                    <span class="material-symbols-outlined text-emerald-400 text-sm">schedule</span> 
+                    Mon - Sun: 8:00 AM - 10:00 PM (Emergency Service Available)
+                </span>
+            </div>
+            <div class="flex items-center gap-3 text-xs font-semibold">
+                <a href="tel:03044776056" title="Call Us Direct" class="flex items-center gap-1.5 px-2.5 py-1 bg-slate-800 hover:bg-accent-500 text-slate-200 hover:text-white rounded-lg transition-all">
+                    <span class="material-symbols-outlined text-base text-accent-500">call</span> 0304-4776056
+                </a>
+                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service,%20I%20have%20a%20welding%20inquiry." target="_blank" title="WhatsApp Us" class="flex items-center gap-1.5 px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-all shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <a href="javascript:void(0)" onclick="switchTab('home')" class="flex items-center group py-2" aria-label="Karachi Welding Service Home">
+                <img src="assets/logo-dark-text.png" alt="Karachi Welding Service Logo" class="h-10 sm:h-12 w-auto object-contain">
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+                <button onclick="switchTab('home')" id="nav-home" class="nav-btn text-accent-500 font-bold border-b-2 border-accent-500 py-1 transition-all">Home</button>
+                <button onclick="switchTab('about')" id="nav-about" class="nav-btn hover:text-accent-500 py-1 transition-all">About Us</button>
+                <button onclick="switchTab('services')" id="nav-services" class="nav-btn hover:text-accent-500 py-1 transition-all">Services</button>
+                <button onclick="switchTab('contact')" id="nav-contact" class="nav-btn hover:text-accent-500 py-1 transition-all">Contact Us</button>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <button onclick="openWhatsAppQuote('General Inquiry from Website Header')" class="hidden sm:flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md hover:shadow-lg transition-all">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    WhatsApp Order
+                </button>
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-700 hover:text-accent-500 p-2 rounded-lg">
+                    <span class="material-symbols-outlined text-2xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+
+        <!-- ==================== TAB 1: HOME ==================== -->
+        <section id="tab-home" class="tab-content active">
+            <!-- Hero Section (Lightened, Clean & Proportional) -->
+            <div class="relative bg-slate-900 text-white overflow-hidden py-16 sm:py-20 lg:py-24" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+                <!-- Elegant Soft Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-900/40"></div>
+
+                <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+                    <div class="max-w-2xl space-y-6 reveal">
+                        <div class="inline-flex items-center gap-2 bg-accent-500/15 border border-accent-500/30 text-amber-300 px-3.5 py-1.5 rounded-full text-xs font-semibold backdrop-blur-md">
+                            <span class="material-symbols-outlined text-sm text-accent-400">verified</span> Liaquatabad & Doorstep Service Across Karachi
+                        </div>
+
+                        <h1 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight text-white">
+                            Professional Welding & <br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-500 via-amber-400 to-yellow-300">
+                                Steel Fabrication Works
+                            </span>
+                        </h1>
+
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-normal max-w-xl">
+                            High gauge gates, safety grills, window frames, steel doors, and doorstep metal repairs delivered with precision and durability.
+                        </p>
+
+                        <div class="flex flex-wrap items-center gap-4 pt-2">
+                            <button onclick="switchTab('services')" class="bg-accent-500 hover:bg-accent-600 text-white px-7 py-3.5 rounded-xl font-bold text-sm shadow-md hover:shadow-lg transition-all flex items-center gap-2">
+                                View Services Catalog
+                                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                            </button>
+                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service,%20I%20want%20a%20free%20quote." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-all flex items-center gap-2 shadow-sm hover:shadow-md">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Value Strip -->
+            <div class="bg-white border-b border-slate-200 py-10">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                        <div class="w-12 h-12 bg-accent-500/10 text-accent-500 rounded-xl flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-2xl">verified_user</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">100% Strong Joints</h4>
+                            <p class="text-xs text-slate-500 mt-1">High gauge electric arc welding with rust protection primer.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                        <div class="w-12 h-12 bg-accent-500/10 text-accent-500 rounded-xl flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-2xl">home_repair_service</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Quick Doorstep Visit</h4>
+                            <p class="text-xs text-slate-500 mt-1">Fast doorstep service across Liaquatabad & all Karachi areas.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                        <div class="w-12 h-12 bg-accent-500/10 text-accent-500 rounded-xl flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-2xl">payments</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Honest Fair Pricing</h4>
+                            <p class="text-xs text-slate-500 mt-1">Clear estimates without hidden charges. Free initial site inspection.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-200/80">
+                        <div class="w-12 h-12 bg-accent-500/10 text-accent-500 rounded-xl flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-2xl">emergency</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Emergency Gate Repairs</h4>
+                            <p class="text-xs text-slate-500 mt-1">Broken hinge, stuck sliding gate, and urgent latch fixing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 1: Services Showcase Carousel -->
+            <div class="bg-slate-50 py-20 border-b border-slate-200/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8 reveal">
+                    <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                        <span class="text-xs font-bold text-accent-500 uppercase tracking-widest bg-accent-500/10 px-3 py-1 rounded-full">Complete Metal Solutions</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Services Offered by Karachi Welding Service</h2>
+                        <p class="text-slate-600 text-sm sm:text-base">Custom metal fabrication and doorstep repairs tailored for homes, shops, and commercial plazas in Karachi.</p>
+                    </div>
+
+                    <!-- Services Carousel Container -->
+                    <div class="relative group/carousel px-2" id="home-carousel-wrapper">
+                        <div class="overflow-hidden rounded-2xl py-2">
+                            <div id="home-carousel-track" class="flex transition-transform duration-500 ease-out">
+                                
+                                <!-- Card 1: General Welding Services -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
+                                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
+                                        <div class="h-52 overflow-hidden relative shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800" alt="General Welding Services Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                                            <span class="absolute top-4 right-4 bg-accent-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">General Work</span>
+                                        </div>
+                                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                            <div class="space-y-3">
+                                                <h3 class="text-xl font-bold text-slate-900">General Welding Services</h3>
+                                                <p class="text-xs text-slate-500 leading-relaxed">Structural iron work, roof shed welding, pipe joining, water tank stand fabrication, and spot metal fixing.</p>
+                                                <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Iron Sheds & Roof Structure</li>
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Pipe Joining & Frame Fixing</li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20General%20Welding%20Services.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-3 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                                <i class="fa-brands fa-whatsapp text-base"></i> Request Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2: Gate Welding / Gate Work -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
+                                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
+                                        <div class="h-52 overflow-hidden relative shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Gate Welding Gate Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                                            <span class="absolute top-4 right-4 bg-brand-700 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Heavy Duty</span>
+                                        </div>
+                                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                            <div class="space-y-3">
+                                                <h3 class="text-xl font-bold text-slate-900">Gate Welding / Gate Work</h3>
+                                                <p class="text-xs text-slate-500 leading-relaxed">Main entrance gates, sliding gates, laser cut CNC designs, hinge alignment, and heavy iron sheet door fabrication.</p>
+                                                <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Modern Laser Cut Designs</li>
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Smooth Sliding Track Roller</li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Gate%20Welding%20%2F%20Gate%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-3 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                                <i class="fa-brands fa-whatsapp text-base"></i> Request Gate Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3: Grill Welding / Grill Work -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
+                                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
+                                        <div class="h-52 overflow-hidden relative shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&q=80&w=800" alt="Grill Welding Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                                            <span class="absolute top-4 right-4 bg-accent-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Safety Grills</span>
+                                        </div>
+                                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                            <div class="space-y-3">
+                                                <h3 class="text-xl font-bold text-slate-900">Grill Welding / Grill Work</h3>
+                                                <p class="text-xs text-slate-500 leading-relaxed">Safety window grills, balcony grills, boundary wall iron spikes, and decorative floral iron grill designs.</p>
+                                                <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Balcony & Window Protection</li>
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Custom Decorative Patterns</li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Grill%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-3 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                                <i class="fa-brands fa-whatsapp text-base"></i> Request Grill Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4: Windows Welding Work -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
+                                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
+                                        <div class="h-52 overflow-hidden relative shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Window Frame Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                                            <span class="absolute top-4 right-4 bg-brand-700 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Windows</span>
+                                        </div>
+                                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                            <div class="space-y-3">
+                                                <h3 class="text-xl font-bold text-slate-900">Windows / Window Frame Work</h3>
+                                                <p class="text-xs text-slate-500 leading-relaxed">Iron window frame installation, steel window security bars, rust repair, and glass frame metal supports.</p>
+                                                <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Heavy Duty Angle Iron Frames</li>
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Rust-Proof Anti Corrosion Base</li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Window%20%2F%20Window%20Frame%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-3 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                                <i class="fa-brands fa-whatsapp text-base"></i> Request Window Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 5: Doors / Door Frame Work -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
+                                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
+                                        <div class="h-52 overflow-hidden relative shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" alt="Iron Door Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                                            <span class="absolute top-4 right-4 bg-accent-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Doors</span>
+                                        </div>
+                                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                            <div class="space-y-3">
+                                                <h3 class="text-xl font-bold text-slate-900">Doors / Door Welding Work</h3>
+                                                <p class="text-xs text-slate-500 leading-relaxed">Iron sheet doors, double safety entrance doors, shop shutter welding, lock plate fixing, and steel frame doors.</p>
+                                                <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> High Security Locking Mechanism</li>
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Double Security Outer Doors</li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Door%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-3 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                                <i class="fa-brands fa-whatsapp text-base"></i> Request Door Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 6: Repair & Custom Work -->
+                                <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
+                                    <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
+                                        <div class="h-52 overflow-hidden relative shrink-0">
+                                            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800" alt="Repair Custom Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
+                                            <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Emergency Repair</span>
+                                        </div>
+                                        <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                            <div class="space-y-3">
+                                                <h3 class="text-xl font-bold text-slate-900">Repair & Custom Welding Work</h3>
+                                                <p class="text-xs text-slate-500 leading-relaxed">Doorstep broken metal repair, custom iron furniture, stair handrails, and urgent site welding across Karachi.</p>
+                                                <ul class="text-xs text-slate-600 space-y-1.5 pt-2 border-t border-slate-100">
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> 24/7 Doorstep Repair Dispatch</li>
+                                                    <li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-emerald-500 text-sm">check_circle</span> Custom Iron & Steel Structures</li>
+                                                </ul>
+                                            </div>
+                                            <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Repair%20%26%20Custom%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-3 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                                <i class="fa-brands fa-whatsapp text-base"></i> Request Repair Quote
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Carousel Navigation Buttons -->
+                        <button id="carousel-prev" aria-label="Previous Service" class="absolute -left-2 sm:-left-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-slate-800 rounded-full shadow-xl border border-slate-200 flex items-center justify-center transition-all opacity-90 hover:scale-110 z-20 hover:text-accent-500">
+                            <span class="material-symbols-outlined text-2xl">chevron_left</span>
+                        </button>
+                        <button id="carousel-next" aria-label="Next Service" class="absolute -right-2 sm:-right-5 top-1/2 -translate-y-1/2 w-11 h-11 bg-white/95 hover:bg-white text-slate-800 rounded-full shadow-xl border border-slate-200 flex items-center justify-center transition-all opacity-90 hover:scale-110 z-20 hover:text-accent-500">
+                            <span class="material-symbols-outlined text-2xl">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Quality Commitment Banner with Rich Image Background -->
+            <div class="relative bg-slate-950 text-white py-20 px-4 sm:px-8 border-b border-slate-800 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1600');">
+                <!-- High-contrast dark blue/brand overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-brand-800/85"></div>
+
+                <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-4">
+                        <span class="text-amber-400 text-xs font-extrabold uppercase tracking-widest bg-amber-500/20 border border-amber-500/30 px-3.5 py-1 rounded-full backdrop-blur-md">Solid Quality Guarantee</span>
+                        <h2 class="text-2xl sm:text-4xl font-black text-white">Highest Quality Metal Fabrication in Karachi</h2>
+                        <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+                            At Karachi Welding Service, we use prime A-Grade angle iron, pipe, and thick steel sheet materials paired with rust-inhibitor red oxide primer. Whether for a main villa gate or a small window repair, we deliver lifetime structural strength.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 flex justify-start lg:justify-end">
+                        <button onclick="switchTab('about')" class="bg-gradient-to-r from-accent-500 to-amber-600 hover:from-accent-600 hover:to-amber-700 text-white px-8 py-4 rounded-xl font-bold text-sm shadow-lg hover:shadow-xl transition-all spark-glow">
+                            About Our Workshop & Team
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Material & Technical Standards -->
+            <div class="py-16 bg-slate-50 border-b border-slate-200/80 reveal">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                        <span class="text-xs font-extrabold text-accent-500 uppercase tracking-widest bg-accent-500/10 px-3 py-1 rounded-full">Raw Material Standards</span>
+                        <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Materials We Use</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm">We source heavy-gauge iron and steel to guarantee zero rust and maximum security.</p>
+                    </div>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-1">
+                            <span class="material-symbols-outlined text-accent-500 text-2xl">shield</span>
+                            <span class="text-xs font-extrabold text-slate-800">14-16 GAUGE IRON</span>
+                            <span class="text-[10px] text-slate-500">Heavy Gates & Doors</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-1">
+                            <span class="material-symbols-outlined text-accent-500 text-2xl">border_all</span>
+                            <span class="text-xs font-extrabold text-slate-800">SQUARE PIPE</span>
+                            <span class="text-[10px] text-slate-500">Grills & Frames</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-1">
+                            <span class="material-symbols-outlined text-accent-500 text-2xl">precision_manufacturing</span>
+                            <span class="text-xs font-extrabold text-slate-800">LASER CUT SHEETS</span>
+                            <span class="text-[10px] text-slate-500">Modern Gate Designs</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-1">
+                            <span class="material-symbols-outlined text-accent-500 text-2xl">lock</span>
+                            <span class="text-xs font-extrabold text-slate-800">HEAVY HINGES</span>
+                            <span class="text-[10px] text-slate-500">Smooth Movement</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-1">
+                            <span class="material-symbols-outlined text-emerald-600 text-2xl">format_paint</span>
+                            <span class="text-xs font-extrabold text-slate-800">RED OXIDE PRIMER</span>
+                            <span class="text-[10px] text-slate-500">Anti-Rust Base</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center justify-center space-y-1">
+                            <span class="material-symbols-outlined text-accent-500 text-2xl">hardware</span>
+                            <span class="text-xs font-extrabold text-slate-800">STAINLESS STEEL</span>
+                            <span class="text-[10px] text-slate-500">Railing & Fittings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: 3 Simple Steps To Get Work Done -->
+            <div class="bg-slate-50 py-20 px-4 sm:px-8 border-b border-slate-200/80">
+                <div class="max-w-7xl mx-auto space-y-12">
+                    <div class="text-center max-w-2xl mx-auto space-y-2">
+                        <span class="text-xs font-extrabold text-accent-500 uppercase tracking-widest bg-accent-500/10 px-3 py-1 rounded-full">Easy Process</span>
+                        <h2 class="text-3xl font-black text-slate-900">3 Simple Steps to Book Service</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm">Convenient doorstep service in Liaquatabad and across Karachi.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all space-y-4">
+                            <span class="text-4xl font-black text-accent-500">01</span>
+                            <h3 class="text-xl font-bold text-slate-900">Call / WhatsApp Details</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Call 0304-4776056 or send photos and approximate measurements of your gate, grill, window, or repair task on WhatsApp.</p>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all space-y-4">
+                            <span class="text-4xl font-black text-accent-500">02</span>
+                            <h3 class="text-xl font-bold text-slate-900">Free Site Inspection</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Our experienced welder visits your location in Karachi for precise measurement, design selection, and final budget confirmation.</p>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all space-y-4">
+                            <span class="text-4xl font-black text-accent-500">03</span>
+                            <h3 class="text-xl font-bold text-slate-900">Quality Fabrication & Fitting</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">We fabricate and complete on-site fitting with heavy gauge material, smooth finishing, and anti-rust coating on schedule.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 5: Customer Reviews in Karachi -->
+            <div class="py-20 bg-white border-b border-slate-200/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                    <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+                        <span class="text-xs font-extrabold text-accent-500 uppercase tracking-widest bg-accent-500/10 px-3 py-1 rounded-full">Client Feedback</span>
+                        <h2 class="text-3xl font-black text-slate-900">What Karachi Residents Say</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm">Trusted reviews from Liaquatabad, Nazimabad, Gulshan, and surrounding areas.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-slate-900 text-sm">Tariq Mahmood</span>
+                                <div class="text-gold-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 italic">"Hamare main gate ke hinges bilkul toot gaye thay. Karachi Welding Service ko call ki aur 45 minutes mein unka technician aa gaya. Gate ki welding aur alignment bilkul solid kar di. Fast and reliable service!"</p>
+                            <span class="text-[10px] text-slate-400 font-semibold block">Liaquatabad, Karachi</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-slate-900 text-sm">Kamran Sheikh</span>
+                                <div class="text-gold-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 italic">"We ordered window security grills and balcony protective grills for our house. Heavy gauge square pipe use kia hai aur paint finishing bhi boht clean hai. Very fair rates and honest work."</p>
+                            <span class="text-[10px] text-slate-400 font-semibold block">Mohammadiya Town, Karachi</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-slate-900 text-sm">Usman Ghani</span>
+                                <div class="text-gold-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 italic">"Boht hi professional aur punctual log hain. Main sliding gate aur iron security door ki fabrication boht neat hui hai. WhatsApp pe quick estimation de di thi. Highly recommended fabricators!"</p>
+                            <span class="text-[10px] text-slate-400 font-semibold block">Nazimabad, Karachi</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-slate-900 text-sm">Bilal Ahmed</span>
+                                <div class="text-gold-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 italic">"Got a heavy-duty roof tin shed and water tank iron stand fabricated for our building. Structural strength top-class hai aur kaam strictly time par complete kia."</p>
+                            <span class="text-[10px] text-slate-400 font-semibold block">Gulshan-e-Iqbal, Karachi</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-slate-900 text-sm">Farhan Siddiqui</span>
+                                <div class="text-gold-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 italic">"Ordered modern laser cut CNC gate for our house entrance. Genuine 16 gauge iron sheet use ki hai aur anti-rust primer coat bhi properly lagaya. Very satisfied with quality!"</p>
+                            <span class="text-[10px] text-slate-400 font-semibold block">Federal B Area, Karachi</span>
+                        </div>
+
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between">
+                                <span class="font-bold text-slate-900 text-sm">Muhammad Rashid</span>
+                                <div class="text-gold-500 text-xs">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-xs text-slate-600 italic">"Urgent shop rolling shutter lock repair ke liye call ki thi. Technician time par aya, portable welding machine k sath, aur 30 minutes mein issue resolve kar dia. Reasonable charges!"</p>
+                            <span class="text-[10px] text-slate-400 font-semibold block">North Nazimabad, Karachi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 6: FAQ Accordion -->
+            <div class="py-20 bg-slate-50 px-4 sm:px-8">
+                <div class="max-w-5xl mx-auto">
+                    <div class="text-center space-y-2 mb-12">
+                        <span class="text-xs font-extrabold text-accent-500 uppercase tracking-widest bg-accent-500/10 px-3 py-1 rounded-full">Questions & Answers</span>
+                        <h2 class="text-3xl font-black text-slate-900">Frequently Asked Questions</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm">Find quick details about our welding services in Liaquatabad & Karachi.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq('faq-1')" class="w-full p-5 text-left font-bold text-sm text-slate-900 flex justify-between items-center hover:bg-slate-50 transition">
+                                <span>Where is your workshop located in Karachi?</span>
+                                <span class="material-symbols-outlined text-accent-500">expand_more</span>
+                            </button>
+                            <div id="faq-1" class="hidden p-5 pt-0 text-xs text-slate-600 border-t border-slate-100 leading-relaxed">
+                                Our workshop is located at <strong>Mohammadiya Town, Liaquatabad, Karachi, Pakistan</strong>. We offer doorstep welding visits across Liaquatabad, Nazimabad, Gulshan-e-Iqbal, Federal B Area, Saddar, and all surrounding areas in Karachi.
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq('faq-2')" class="w-full p-5 text-left font-bold text-sm text-slate-900 flex justify-between items-center hover:bg-slate-50 transition">
+                                <span>Do you provide doorstep emergency repair service?</span>
+                                <span class="material-symbols-outlined text-accent-500">expand_more</span>
+                            </button>
+                            <div id="faq-2" class="hidden p-5 pt-0 text-xs text-slate-600 border-t border-slate-100 leading-relaxed">
+                                Yes! For urgent gate broken hinges, stuck sliding rollers, or broken lock plates, our skilled welder can come directly to your home with portable tools. Simply call or WhatsApp us at <strong>0304-4776056</strong>.
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq('faq-3')" class="w-full p-5 text-left font-bold text-sm text-slate-900 flex justify-between items-center hover:bg-slate-50 transition">
+                                <span>How do you calculate iron gate and grill rates in Karachi?</span>
+                                <span class="material-symbols-outlined text-accent-500">expand_more</span>
+                            </button>
+                            <div id="faq-3" class="hidden p-5 pt-0 text-xs text-slate-600 border-t border-slate-100 leading-relaxed">
+                                Rates depend on total area (Square Feet), gauge of iron chosen (14g, 16g, or SS), and complexity of design (Laser cut vs standard bars). You can contact us directly via phone or WhatsApp for an instant custom quotation!
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                            <button onclick="toggleFaq('faq-4')" class="w-full p-5 text-left font-bold text-sm text-slate-900 flex justify-between items-center hover:bg-slate-50 transition">
+                                <span>How can I get a free quote on WhatsApp?</span>
+                                <span class="material-symbols-outlined text-accent-500">expand_more</span>
+                            </button>
+                            <div id="faq-4" class="hidden p-5 pt-0 text-xs text-slate-600 border-t border-slate-100 leading-relaxed">
+                                Simply click any WhatsApp button on this site or message <strong>0304-4776056</strong>. Send us approximate dimensions or photos of the design you like, and we will reply with an estimate right away.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 2: ABOUT US ==================== -->
+        <section id="tab-about" class="tab-content">
+            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600');">
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45"></div>
+                <div class="max-w-7xl mx-auto text-center space-y-3 relative z-10">
+                    <span class="text-accent-500 text-xs font-extrabold uppercase tracking-widest bg-accent-500/20 border border-accent-500/30 px-3.5 py-1 rounded-full">Our Experience & Values</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">About Karachi Welding Service</h1>
+                    <p class="text-slate-100 text-sm sm:text-base max-w-[700px] mx-auto leading-relaxed font-medium">Providing high-grade metal fabrication, gates, grills, window frames, steel doors, and doorstep repairs across Karachi for over 12 years.</p>
+                </div>
+            </div>
+
+            <!-- Leadership / Master Craftsman Block -->
+            <div class="py-20 bg-slate-50 border-b border-slate-200/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                    <div class="bg-white rounded-3xl border border-slate-200 shadow-lg overflow-hidden grid grid-cols-1 lg:grid-cols-12">
+                        <div class="lg:col-span-5 bg-slate-900 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden pattern-grid">
+                            <div class="space-y-6 relative z-10">
+                                <span class="inline-block bg-accent-500 text-white text-[11px] font-extrabold uppercase px-3 py-1 rounded-md">Master Fabricator Statement</span>
+                                <div class="w-20 h-20 bg-slate-800 rounded-full border-4 border-accent-500 flex items-center justify-center font-bold text-3xl text-white shadow-lg">
+                                    KW
+                                </div>
+                                <div>
+                                    <h2 class="text-2xl font-extrabold text-white">Karachi Welding Team</h2>
+                                    <p class="text-xs text-accent-500 font-bold uppercase tracking-wider mt-1">Liaquatabad Master Fabricators</p>
+                                    <p class="text-xs text-slate-300 mt-0.5">Mohammadiya Town Branch</p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-800 text-xs text-slate-300 space-y-2">
+                                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-500 text-sm">location_on</span> Mohammadiya Town, Liaquatabad</p>
+                                    <p class="flex items-center gap-2"><span class="material-symbols-outlined text-accent-500 text-sm">call</span> 0304-4776056</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-7 p-8 sm:p-12 flex flex-col justify-center space-y-5 bg-white">
+                            <span class="text-xs font-bold uppercase tracking-widest text-accent-500">Craftsmanship Pledge</span>
+                            <h3 class="text-2xl sm:text-3xl font-black text-slate-900 leading-snug">
+                                "Unmatched Strength, Authentic Materials & Full Transparency."
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Welcome to <strong>Karachi Welding Service</strong>. Our mission is simple: To provide homeowners, shop owners, and commercial builders in Liaquatabad and Karachi with uncompromised welding quality and reliable doorstep support.
+                            </p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                We know that gates, window grills, and security doors are the first line of defense for your family and shop security. That is why we never compromise on gauge thickness or welding joint integrity.
+                            </p>
+                            <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl text-slate-800 text-xs font-semibold leading-relaxed">
+                                Guaranteed premium heavy-duty iron and steel materials, honest pricing, and prompt doorstep installation across Karachi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Core Principles -->
+            <div class="bg-white py-20 border-t border-slate-200/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
+                    <div class="text-center max-w-2xl mx-auto">
+                        <h2 class="text-3xl font-extrabold text-slate-900">Our Core Principles</h2>
+                        <p class="text-slate-600 text-sm mt-2">Guiding every single site visit and fabrication order in Karachi.</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4">
+                            <div class="w-12 h-12 bg-accent-500 text-white rounded-xl flex items-center justify-center font-bold">
+                                <span class="material-symbols-outlined">shield</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Heavy Material Quality</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">We strictly use authentic 14g and 16g iron pipes, solid square bars, and heavy duty hinges so gates and grills last for generations.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4">
+                            <div class="w-12 h-12 bg-slate-900 text-white rounded-xl flex items-center justify-center font-bold">
+                                <span class="material-symbols-outlined">schedule</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Punctual Delivery</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">We respect our customer's time in Karachi. Work is measured, fabricated, and installed within promised deadlines.</p>
+                        </div>
+
+                        <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 space-y-4">
+                            <div class="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center font-bold">
+                                <span class="material-symbols-outlined">handshake</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-900">Fair & Transparent Rates</h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">Clear per sq.ft and site inspection estimates without hidden costs or extra charges later on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 3: SERVICES CATALOG ==================== -->
+        <section id="tab-services" class="tab-content">
+            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600');">
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45"></div>
+                <div class="max-w-7xl mx-auto text-center space-y-3 relative z-10">
+                    <span class="text-accent-500 text-xs font-extrabold uppercase tracking-widest bg-accent-500/20 border border-accent-500/30 px-3.5 py-1 rounded-full">Full Service Portfolio</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Services & Metal Work</h1>
+                    <p class="text-slate-100 text-sm sm:text-base max-w-[700px] mx-auto leading-relaxed font-medium">Explore all 6 core categories of welding and fabrication services offered across Liaquatabad Mohammadiya Town & Karachi.</p>
+                </div>
+            </div>
+
+            <!-- Service Catalog Grid Section -->
+            <div class="py-16 bg-slate-50 border-b border-slate-200/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                    
+                    <!-- Services Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                            <div class="h-48 overflow-hidden relative shrink-0">
+                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Main Gate Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-accent-500 text-white px-2.5 py-1 rounded shadow-md">Main Gate</span>
+                            </div>
+                            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-bold text-slate-900">Main Entrance & Sliding Gate Work</h3>
+                                    <p class="text-xs text-slate-500">Heavy gauge iron sheet gates, laser cut CNC patterns, smooth ball-bearing sliding rollers, and hinge repairs.</p>
+                                    <ul class="text-xs text-slate-600 space-y-1">
+                                        <li>• Double door swing gates & sliding designs</li>
+                                        <li>• Heavy lock plate & latch fittings</li>
+                                    </ul>
+                                </div>
+                                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Gate%20Welding%20%2F%20Gate%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-2.5 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Request Gate Quote
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                            <div class="h-48 overflow-hidden relative shrink-0">
+                                <img src="https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&q=80&w=800" alt="Safety Grill Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-brand-700 text-white px-2.5 py-1 rounded shadow-md">Grill Work</span>
+                            </div>
+                            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-bold text-slate-900">Safety & Balcony Grill Welding</h3>
+                                    <p class="text-xs text-slate-500">Square bar safety grills, floral decorative patterns, boundary wall spikes, and balcony protective railings.</p>
+                                    <ul class="text-xs text-slate-600 space-y-1">
+                                        <li>• High security square pipe design</li>
+                                        <li>• Custom floral and geometry patterns</li>
+                                    </ul>
+                                </div>
+                                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Grill%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-2.5 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Request Grill Quote
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                            <div class="h-48 overflow-hidden relative shrink-0">
+                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Window Frame Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-accent-500 text-white px-2.5 py-1 rounded shadow-md">Windows</span>
+                            </div>
+                            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-bold text-slate-900">Windows / Window Frame Work</h3>
+                                    <p class="text-xs text-slate-500">Angle iron window frame fitting, steel security bars, glass frame support, and rust restoration.</p>
+                                    <ul class="text-xs text-slate-600 space-y-1">
+                                        <li>• Angle iron & square pipe window frames</li>
+                                        <li>• Strong security bars for ground floor windows</li>
+                                    </ul>
+                                </div>
+                                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Window%20%2F%20Window%20Frame%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-2.5 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Request Window Quote
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                            <div class="h-48 overflow-hidden relative shrink-0">
+                                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" alt="Iron Door Fabrication Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-brand-700 text-white px-2.5 py-1 rounded shadow-md">Doors</span>
+                            </div>
+                            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-bold text-slate-900">Doors / Security Door Welding</h3>
+                                    <p class="text-xs text-slate-500">Heavy iron sheet doors, double safety entrance doors, shop rolling shutters repair, and lock plates.</p>
+                                    <ul class="text-xs text-slate-600 space-y-1">
+                                        <li>• Solid iron sheet safety doors</li>
+                                        <li>• Shop shutter hinge & lock welding</li>
+                                    </ul>
+                                </div>
+                                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Door%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-2.5 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Request Door Quote
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                            <div class="h-48 overflow-hidden relative shrink-0">
+                                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800" alt="General Welding Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-accent-500 text-white px-2.5 py-1 rounded shadow-md">General Work</span>
+                            </div>
+                            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-bold text-slate-900">General Welding Services</h3>
+                                    <p class="text-xs text-slate-500">Roof tin shed welding, water tank iron stand fabrication, steel pipe welding, and household metal fixing.</p>
+                                    <ul class="text-xs text-slate-600 space-y-1">
+                                        <li>• Water tank heavy duty stands</li>
+                                        <li>• Iron pipe joining & roof sheds</li>
+                                    </ul>
+                                </div>
+                                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20General%20Welding%20Services.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-2.5 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Request General Quote
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
+                            <div class="h-48 overflow-hidden relative shrink-0">
+                                <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800" alt="Repair Custom Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-emerald-600 text-white px-2.5 py-1 rounded shadow-md">Urgent Repair</span>
+                            </div>
+                            <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                                <div class="space-y-3">
+                                    <h3 class="text-lg font-bold text-slate-900">Repair & Custom Welding Work</h3>
+                                    <p class="text-xs text-slate-500">Emergency doorstep gate alignment, broken hinge fixing, custom iron furniture, and stair railings.</p>
+                                    <ul class="text-xs text-slate-600 space-y-1">
+                                        <li>• Fast doorstep response in Karachi</li>
+                                        <li>• Custom steel furniture & railings</li>
+                                    </ul>
+                                </div>
+                                <a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Repair%20%26%20Custom%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="w-full bg-slate-900 hover:bg-accent-500 text-white text-xs font-bold py-2.5 rounded-xl transition mt-4 flex items-center justify-center gap-2">
+                                    <i class="fa-brands fa-whatsapp text-base"></i> Request Repair Quote
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== TAB 4: CONTACT US ==================== -->
+        <section id="tab-contact" class="tab-content">
+            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600');">
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45"></div>
+                <div class="max-w-7xl mx-auto text-center space-y-3 relative z-10">
+                    <span class="text-accent-500 text-xs font-extrabold uppercase tracking-widest bg-accent-500/20 border border-accent-500/30 px-3.5 py-1 rounded-full">Direct Customer Support</span>
+                    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Contact Karachi Welding Service</h1>
+                    <p class="text-slate-100 text-sm sm:text-base max-w-[700px] mx-auto leading-relaxed font-medium">Have a welding inquiry or need emergency doorstep repair? Call, WhatsApp, or send us your booking details right away.</p>
+                </div>
+            </div>
+
+            <div class="py-20 bg-slate-50 border-b border-slate-200/80">
+                <div class="max-w-7xl mx-auto px-4 sm:px-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        
+                        <!-- Left Info Cards -->
+                        <div class="lg:col-span-5 space-y-8">
+                            <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+                                <h3 class="text-xl font-extrabold text-slate-900 border-b border-slate-100 pb-4">Workshop Location & Contacts</h3>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-accent-500/10 text-accent-500 rounded-xl flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined">location_on</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Workshop Address</h4>
+                                        <p class="text-sm font-bold text-slate-900 mt-1">Mohammadiya Town, Liaquatabad, Karachi</p>
+                                        <p class="text-xs text-slate-500">Sindh, Pakistan (Doorstep service all over Karachi)</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-emerald-500/10 text-emerald-600 rounded-xl flex items-center justify-center shrink-0">
+                                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">WhatsApp & Phone</h4>
+                                        <a href="https://wa.me/923044776056" target="_blank" class="block text-lg font-black text-slate-900 hover:text-emerald-600 transition mt-0.5">
+                                            0304-4776056
+                                        </a>
+                                        <p class="text-[11px] text-slate-400">Direct WhatsApp Chat & Call Line</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-gold-500/10 text-gold-500 rounded-xl flex items-center justify-center shrink-0">
+                                        <span class="material-symbols-outlined">schedule</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Working Hours</h4>
+                                        <p class="text-xs font-bold text-slate-900 mt-1">Monday - Sunday: 8:00 AM - 10:00 PM</p>
+                                        <p class="text-[11px] text-accent-600 font-semibold mt-0.5">(24/7 Emergency Repairs Available on Call)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="tel:03044776056" class="w-full bg-gradient-to-r from-accent-500 to-amber-600 hover:from-accent-600 hover:to-amber-700 text-white font-bold py-4 rounded-2xl flex items-center justify-center gap-3 shadow-lg spark-glow transition-all">
+                                <span class="material-symbols-outlined text-2xl">call</span>
+                                <span class="text-base">Direct Phone Call: 03044776056</span>
+                            </a>
+                        </div>
+
+                        <!-- Right Booking Form -->
+                        <div class="lg:col-span-7">
+                            <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm space-y-6">
+                                <div>
+                                    <h3 class="text-2xl font-extrabold text-slate-900">Send WhatsApp Booking Request</h3>
+                                    <p class="text-xs text-slate-500 mt-1">Fill out this quick form to auto-generate a WhatsApp message for site visit booking.</p>
+                                </div>
+
+                                <form id="contact-form" class="space-y-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
+                                        <input type="text" id="cust-name" required placeholder="e.g. Mohammad Ali" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-xs focus:ring-2 focus:ring-accent-500 focus:outline-none transition">
+                                    </div>
+
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <div>
+                                            <label class="block text-xs font-bold text-slate-700 mb-1">Area in Karachi *</label>
+                                            <input type="text" id="cust-area" required placeholder="e.g. Liaquatabad / Nazimabad" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-xs focus:ring-2 focus:ring-accent-500 focus:outline-none transition">
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-bold text-slate-700 mb-1">Required Service</label>
+                                            <select id="cust-service" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-xs focus:ring-2 focus:ring-accent-500 focus:outline-none transition">
+                                                <option value="Gate Welding Work">Gate Welding / Gate Work</option>
+                                                <option value="Grill Welding Work">Grill Welding / Grill Work</option>
+                                                <option value="Window Frame Work">Windows / Window Frame Work</option>
+                                                <option value="Door Work">Doors / Door Welding Work</option>
+                                                <option value="General Welding">General Welding Services</option>
+                                                <option value="Urgent Repair Work">Repair & Custom Welding Work</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-700 mb-1">Work Description / Details *</label>
+                                        <textarea id="cust-msg" required rows="4" placeholder="Mention size details, design preference or repair required..." class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-xs focus:ring-2 focus:ring-accent-500 focus:outline-none transition"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm py-4 rounded-xl shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2">
+                                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                                        <span>Submit & Open WhatsApp</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Floating Sticky WhatsApp Button -->
+    <a href="https://wa.me/923044776056?text=Hi%20Karachi%20Welding%20Service,%20I%20need%20welding%20help." target="_blank" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 group border-2 border-white">
+        <span class="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30"></span>
+        <i class="fa-brands fa-whatsapp text-3xl relative z-10"></i>
+    </a>
+
+    <!-- Toast Message Container -->
+    <div id="toast" class="fixed top-6 right-6 z-50 hidden bg-slate-900 text-white text-xs font-bold px-6 py-4 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-3">
+        <span class="material-symbols-outlined text-emerald-400">check_circle</span>
+        <span id="toast-message">Request generated successfully!</span>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="bg-slate-900 text-slate-400 text-xs border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="space-y-4">
+                <a href="javascript:void(0)" onclick="switchTab('home')" class="flex items-center py-1" aria-label="Karachi Welding Service Home">
+                    <img src="assets/logo-light-text.png" alt="Karachi Welding Service Logo" class="h-9 w-auto object-contain">
+                </a>
+                <p class="leading-relaxed text-slate-400">
+                    Trusted metal fabrication workshop in Liaquatabad Mohammadiya Town, Karachi. Gate welding, safety grills, window frames, steel doors, and emergency doorstep repairs.
+                </p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Quick Navigation</h4>
+                <ul class="space-y-2">
+                    <li><button onclick="switchTab('home')" class="hover:text-accent-500 transition">Home Page</button></li>
+                    <li><button onclick="switchTab('about')" class="hover:text-accent-500 transition">About Us</button></li>
+                    <li><button onclick="switchTab('services')" class="hover:text-accent-500 transition">Services</button></li>
+                    <li><button onclick="switchTab('contact')" class="hover:text-accent-500 transition">Contact Us</button></li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Core Services</h4>
+                <ul class="space-y-2 text-slate-300">
+                    <li><a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Gate%20Welding%20%2F%20Gate%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">Gate Welding / Gate Work</a></li>
+                    <li><a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Grill%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">Grill Welding / Grill Work</a></li>
+                    <li><a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Window%20%2F%20Window%20Frame%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">Windows / Frame Welding</a></li>
+                    <li><a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Door%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">Doors / Door Welding Work</a></li>
+                    <li><a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20General%20Welding%20Services.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">General Welding Services</a></li>
+                    <li><a href="https://wa.me/923044776056?text=Hello%20Karachi%20Welding%20Service%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20Repair%20%26%20Custom%20Welding%20Work.%20Please%20share%20the%20details." target="_blank" rel="noopener noreferrer" class="hover:text-accent-500 transition-colors">Repair & Custom Welding</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider">Workshop Contact</h4>
+                <p class="text-slate-300">Mohammadiya Town, Liaquatabad, Karachi, Pakistan</p>
+                <div class="space-y-1.5 text-slate-300 font-semibold">
+                    <p>WhatsApp: <a href="https://wa.me/923044776056" target="_blank" class="text-emerald-400 hover:underline">0304-4776056</a></p>
+                    <p>Phone: <a href="tel:03044776056" class="hover:text-accent-500 transition-colors">0304-4776056</a></p>
+                    <p class="text-[11px] text-amber-400 mt-1">Doorstep Service Across All Karachi Areas</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-slate-950 py-6 border-t border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left text-slate-500">
+                <p>© <span id="year"></span> Karachi Welding Service. All Rights Reserved.</p>
+                <p>Mohammadiya Town, Liaquatabad, Karachi | Call / WhatsApp: <a href="https://wa.me/923044776056" class="text-slate-300 hover:text-emerald-400">0304-4776056</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Navigation Tab Switching
+        function switchTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            const target = document.getElementById('tab-' + tabId);
+            if (target) {
+                target.classList.add('active');
+            }
+
+            const navBtns = document.querySelectorAll('.nav-btn');
+            navBtns.forEach(btn => {
+                btn.classList.remove('text-accent-500', 'font-bold', 'border-b-2', 'border-accent-500');
+                btn.classList.add('hover:text-accent-500');
+            });
+
+            const activeNav = document.getElementById('nav-' + tabId);
+            if (activeNav) {
+                activeNav.classList.add('text-accent-500', 'font-bold', 'border-b-2', 'border-accent-500');
+            }
+
+            const mobBtns = document.querySelectorAll('.mob-nav-btn');
+            mobBtns.forEach(btn => {
+                btn.classList.remove('bg-brand-700/50', 'text-accent-500', 'font-bold');
+                btn.classList.add('text-slate-200');
+            });
+
+            const activeMobNav = document.getElementById('nav-mob-' + tabId);
+            if (activeMobNav) {
+                activeMobNav.classList.remove('text-slate-200');
+                activeMobNav.classList.add('bg-brand-700/50', 'text-accent-500', 'font-bold');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Mobile Drawer Toggle
+        function openMobileMenu() {
+            const backdrop = document.getElementById('mobile-backdrop');
+            const drawer = document.getElementById('mobile-drawer');
+            if (!backdrop || !drawer) return;
+            
+            backdrop.classList.remove('opacity-0', 'pointer-events-none');
+            backdrop.classList.add('opacity-100', 'pointer-events-auto');
+            drawer.classList.remove('-translate-x-full');
+            drawer.classList.add('translate-x-0');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeMobileMenu() {
+            const backdrop = document.getElementById('mobile-backdrop');
+            const drawer = document.getElementById('mobile-drawer');
+            if (!backdrop || !drawer) return;
+
+            backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+            backdrop.classList.add('opacity-0', 'pointer-events-none');
+            drawer.classList.remove('translate-x-0');
+            drawer.classList.add('-translate-x-full');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        function toggleMobileMenu() {
+            const drawer = document.getElementById('mobile-drawer');
+            if (drawer && drawer.classList.contains('translate-x-0')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMobileMenu();
+        });
+
+        // FAQ Toggle
+        function toggleFaq(faqId) {
+            const el = document.getElementById(faqId);
+            if (el) {
+                el.classList.toggle('hidden');
+            }
+        }
+
+        // Services Catalog Filter
+        function filterServices(category) {
+            const cards = document.querySelectorAll('.serv-card');
+            const btns = document.querySelectorAll('.filter-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('bg-accent-500', 'text-white', 'shadow-md');
+                btn.classList.add('bg-white', 'text-slate-700');
+            });
+
+            if (event && event.target) {
+                event.target.classList.remove('bg-white', 'text-slate-700');
+                event.target.classList.add('bg-accent-500', 'text-white', 'shadow-md');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // WhatsApp Quote Opener
+        function openWhatsAppQuote(serviceName) {
+            const phone = "923044776056";
+            let text = `Hello Karachi Welding Service, I would like to get a quote for ${serviceName}. Please share the details.`;
+            if (/gate/i.test(serviceName)) {
+                text = "Hello Karachi Welding Service, I would like to get a quote for Gate Welding / Gate Work. Please share the details.";
+            } else if (/grill/i.test(serviceName)) {
+                text = "Hello Karachi Welding Service, I would like to get a quote for Grill Welding Work. Please share the details.";
+            } else if (/window/i.test(serviceName)) {
+                text = "Hello Karachi Welding Service, I would like to get a quote for Window / Window Frame Welding Work. Please share the details.";
+            } else if (/door/i.test(serviceName)) {
+                text = "Hello Karachi Welding Service, I would like to get a quote for Door Welding Work. Please share the details.";
+            } else if (/general/i.test(serviceName)) {
+                text = "Hello Karachi Welding Service, I would like to get a quote for General Welding Services. Please share the details.";
+            } else if (/repair/i.test(serviceName)) {
+                text = "Hello Karachi Welding Service, I would like to get a quote for Repair & Custom Welding Work. Please share the details.";
+            }
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        // Interactive Carousel Controls
+        let currentSlide = 0;
+        const realSlidesCount = 6;
+        let autoPlayInterval = null;
+        let isTransitioning = false;
+
+        function getVisibleSlides() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        }
+
+        function updateCarousel(useTransition = true) {
+            const track = document.getElementById('home-carousel-track');
+            if (!track) return;
+            const visible = getVisibleSlides();
+            const slidePercentage = 100 / visible;
+
+            if (!useTransition) {
+                track.style.transition = 'none';
+            } else {
+                track.style.transition = 'transform 500ms ease-out';
+            }
+
+            track.style.transform = `translateX(-${currentSlide * slidePercentage}%)`;
+        }
+
+        function nextSlide() {
+            if (isTransitioning) return;
+            const visible = getVisibleSlides();
+            const maxIndex = realSlidesCount - visible;
+
+            if (currentSlide >= maxIndex) {
+                currentSlide = 0;
+            } else {
+                currentSlide++;
+            }
+            updateCarousel(true);
+        }
+
+        function prevSlide() {
+            if (isTransitioning) return;
+            const visible = getVisibleSlides();
+            const maxIndex = realSlidesCount - visible;
+
+            if (currentSlide <= 0) {
+                currentSlide = maxIndex;
+            } else {
+                currentSlide--;
+            }
+            updateCarousel(true);
+        }
+
+        function startAutoPlay() {
+            stopAutoPlay();
+            autoPlayInterval = setInterval(nextSlide, 4500);
+        }
+
+        function stopAutoPlay() {
+            if (autoPlayInterval) clearInterval(autoPlayInterval);
+        }
+
+        // Contact Form Handler
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('cust-name').value;
+                const area = document.getElementById('cust-area').value;
+                const service = document.getElementById('cust-service').value;
+                const msg = document.getElementById('cust-msg').value;
+
+                const text = `New Booking Request from Website:
+*Name*: ${name}
+*Area*: ${area} (Karachi)
+*Service Required*: ${service}
+*Details*: ${msg}`;
+
+                window.open(`https://wa.me/923044776056?text=${encodeURIComponent(text)}`, '_blank');
+            });
+        }
+
+        // Document Ready Initializers
+        document.addEventListener('DOMContentLoaded', () => {
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            const wrapper = document.getElementById('home-carousel-wrapper');
+            const track = document.getElementById('home-carousel-track');
+
+            if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); startAutoPlay(); });
+            if (nextBtn) nextBtn.addEventListener('click', () => { nextSlide(); startAutoPlay(); });
+
+            if (wrapper) {
+                wrapper.addEventListener('mouseenter', stopAutoPlay);
+                wrapper.addEventListener('mouseleave', startAutoPlay);
+            }
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+            if (track) {
+                track.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+                track.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    if (touchStartX - touchEndX > 40) { nextSlide(); startAutoPlay(); }
+                    else if (touchEndX - touchStartX > 40) { prevSlide(); startAutoPlay(); }
+                }, { passive: true });
+            }
+
+            window.addEventListener('resize', () => updateCarousel(false));
+            startAutoPlay();
+
+            // Intersection Observer Reveal
+            const reveals = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('active');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.1 });
+
+                reveals.forEach(el => observer.observe(el));
+            } else {
+                reveals.forEach(el => el.classList.add('active'));
+            }
+        });
+    </script>
+</body>
+</html>
