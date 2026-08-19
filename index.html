@@ -94,6 +94,21 @@
             opacity: 1;
             transform: translateY(0);
         }
+    
+        /* Scroll Header Compact Styling */
+        #main-header, #main-header-container, #header-logo {
+            transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .header-scrolled {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+        }
+        .header-scrolled #main-header-container {
+            height: 3.75rem !important; /* 60px */
+        }
+        .header-scrolled #header-logo {
+            height: 2.25rem !important; /* 36px */
+        }
+
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-accent-500 selection:text-white min-h-screen flex flex-col justify-between">
@@ -186,10 +201,10 @@
     </div>
 
     <!-- Main Navigation Header -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+    <header id="main-header" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div id="main-header-container" class="max-w-7xl mx-auto px-4 sm:px-8 h-20 sm:h-22 lg:h-24 flex items-center justify-between">
             <a href="javascript:void(0)" onclick="switchTab('home')" class="flex items-center group py-2" aria-label="Karachi Welding Service Home">
-                <img src="assets/logo-dark-text.png" alt="Karachi Welding Service Logo" class="h-10 sm:h-12 w-auto object-contain">
+                <img id="header-logo" src="assets/logo-dark-text.png" alt="Karachi Welding Service Logo" class="h-12 sm:h-14 lg:h-16 w-auto object-contain">
             </a>
 
             <!-- Desktop Nav Links -->
@@ -217,7 +232,7 @@
         <!-- ==================== TAB 1: HOME ==================== -->
         <section id="tab-home" class="tab-content active">
             <!-- Hero Section (Lightened, Clean & Proportional) -->
-            <div class="relative bg-slate-900 text-white overflow-hidden py-16 sm:py-20 lg:py-24" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+            <div class="relative bg-slate-900 text-white overflow-hidden py-16 sm:py-20 lg:py-24" style="background-image: url('assets/home_herobanner.png'); background-position: center right; background-size: cover; background-repeat: no-repeat;">
                 <!-- Elegant Soft Gradient Overlay -->
                 <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-900/40"></div>
 
@@ -311,7 +326,7 @@
                                 <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
                                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
                                         <div class="h-52 overflow-hidden relative shrink-0">
-                                            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800" alt="General Welding Services Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <img src="assets/General Welding Services.png" alt="General Welding Services Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                                             <span class="absolute top-4 right-4 bg-accent-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">General Work</span>
                                         </div>
@@ -335,7 +350,7 @@
                                 <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
                                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
                                         <div class="h-52 overflow-hidden relative shrink-0">
-                                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Gate Welding Gate Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <img src="assets/Main Entrance & Sliding Gate Work.png" alt="Gate Welding Gate Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                                             <span class="absolute top-4 right-4 bg-brand-700 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Heavy Duty</span>
                                         </div>
@@ -359,7 +374,7 @@
                                 <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
                                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
                                         <div class="h-52 overflow-hidden relative shrink-0">
-                                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Grill Welding Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <img src="assets/Safety & Balcony Grill Welding.png" alt="Grill Welding Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                                             <span class="absolute top-4 right-4 bg-accent-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Safety Grills</span>
                                         </div>
@@ -383,7 +398,7 @@
                                 <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
                                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
                                         <div class="h-52 overflow-hidden relative shrink-0">
-                                            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Window Frame Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <img src="assets/Windows  Window Frame Work.png" alt="Window Frame Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                                             <span class="absolute top-4 right-4 bg-brand-700 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Windows</span>
                                         </div>
@@ -407,7 +422,7 @@
                                 <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
                                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
                                         <div class="h-52 overflow-hidden relative shrink-0">
-                                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" alt="Iron Door Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <img src="assets/Doors  Security Door Welding.png" alt="Iron Door Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                                             <span class="absolute top-4 right-4 bg-accent-500 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Doors</span>
                                         </div>
@@ -431,7 +446,7 @@
                                 <div class="w-full md:w-1/2 lg:w-1/3 shrink-0 px-3">
                                     <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group h-full flex flex-col justify-between">
                                         <div class="h-52 overflow-hidden relative shrink-0">
-                                            <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800" alt="Repair Custom Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                            <img src="assets/Repair & Custom Welding Work.png" alt="Repair Custom Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
                                             <span class="absolute top-4 right-4 bg-emerald-600 text-white text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-md shadow-md">Emergency Repair</span>
                                         </div>
@@ -466,7 +481,7 @@
             </div>
 
             <!-- Section 2: Quality Commitment Banner with Rich Image Background -->
-            <div class="relative bg-slate-950 text-white py-20 px-4 sm:px-8 border-b border-slate-800 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1600');">
+            <div class="relative bg-slate-950 text-white py-20 px-4 sm:px-8 border-b border-slate-800 bg-cover bg-center overflow-hidden" style="background-image: url('assets/Home_Solid Quality Guarantee.png'); background-position: center center; background-size: cover;">
                 <!-- High-contrast dark blue/brand overlay -->
                 <div class="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-900/80 to-brand-800/85"></div>
 
@@ -696,7 +711,7 @@
 
         <!-- ==================== TAB 2: ABOUT US ==================== -->
         <section id="tab-about" class="tab-content">
-            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600');">
+            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('assets/home_herobanner.png'); background-position: center center; background-size: cover;">
                 <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45"></div>
                 <div class="max-w-7xl mx-auto text-center space-y-3 relative z-10">
                     <span class="text-accent-500 text-xs font-extrabold uppercase tracking-widest bg-accent-500/20 border border-accent-500/30 px-3.5 py-1 rounded-full">Our Experience & Values</span>
@@ -785,7 +800,7 @@
 
         <!-- ==================== TAB 3: SERVICES CATALOG ==================== -->
         <section id="tab-services" class="tab-content">
-            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600');">
+            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('assets/home_herobanner.png'); background-position: center center; background-size: cover;">
                 <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45"></div>
                 <div class="max-w-7xl mx-auto text-center space-y-3 relative z-10">
                     <span class="text-accent-500 text-xs font-extrabold uppercase tracking-widest bg-accent-500/20 border border-accent-500/30 px-3.5 py-1 rounded-full">Full Service Portfolio</span>
@@ -803,7 +818,7 @@
                         
                         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                             <div class="h-48 overflow-hidden relative shrink-0">
-                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Main Gate Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="assets/Main Entrance & Sliding Gate Work.png" alt="Main Gate Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-accent-500 text-white px-2.5 py-1 rounded shadow-md">Main Gate</span>
                             </div>
                             <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
@@ -823,7 +838,7 @@
 
                         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                             <div class="h-48 overflow-hidden relative shrink-0">
-                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Safety Grill Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="assets/Safety & Balcony Grill Welding.png" alt="Safety Grill Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-brand-700 text-white px-2.5 py-1 rounded shadow-md">Grill Work</span>
                             </div>
                             <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
@@ -843,7 +858,7 @@
 
                         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                             <div class="h-48 overflow-hidden relative shrink-0">
-                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Window Frame Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="assets/Windows  Window Frame Work.png" alt="Window Frame Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-accent-500 text-white px-2.5 py-1 rounded shadow-md">Windows</span>
                             </div>
                             <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
@@ -863,7 +878,7 @@
 
                         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                             <div class="h-48 overflow-hidden relative shrink-0">
-                                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=800" alt="Iron Door Fabrication Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="assets/Doors  Security Door Welding.png" alt="Iron Door Fabrication Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-brand-700 text-white px-2.5 py-1 rounded shadow-md">Doors</span>
                             </div>
                             <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
@@ -883,7 +898,7 @@
 
                         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                             <div class="h-48 overflow-hidden relative shrink-0">
-                                <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800" alt="General Welding Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="assets/General Welding Services.png" alt="General Welding Work Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-accent-500 text-white px-2.5 py-1 rounded shadow-md">General Work</span>
                             </div>
                             <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
@@ -903,7 +918,7 @@
 
                         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between group">
                             <div class="h-48 overflow-hidden relative shrink-0">
-                                <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800" alt="Repair Custom Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <img src="assets/Repair & Custom Welding Work.png" alt="Repair Custom Welding Karachi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                                 <span class="absolute top-4 right-4 text-[10px] font-extrabold uppercase bg-emerald-600 text-white px-2.5 py-1 rounded shadow-md">Urgent Repair</span>
                             </div>
                             <div class="p-6 space-y-3 flex-1 flex flex-col justify-between">
@@ -928,7 +943,7 @@
 
         <!-- ==================== TAB 4: CONTACT US ==================== -->
         <section id="tab-contact" class="tab-content">
-            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1600');">
+            <div class="relative bg-slate-900 text-white py-16 px-4 sm:px-8 bg-cover bg-center overflow-hidden" style="background-image: url('assets/home_herobanner.png'); background-position: center center; background-size: cover;">
                 <div class="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/65 to-slate-950/45"></div>
                 <div class="max-w-7xl mx-auto text-center space-y-3 relative z-10">
                     <span class="text-accent-500 text-xs font-extrabold uppercase tracking-widest bg-accent-500/20 border border-accent-500/30 px-3.5 py-1 rounded-full">Direct Customer Support</span>
@@ -1318,6 +1333,19 @@
         }
 
         // Document Ready Initializers
+        
+        // Sticky Header Scroll Handler
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (header) {
+                if (window.scrollY > 30) {
+                    header.classList.add('header-scrolled');
+                } else {
+                    header.classList.remove('header-scrolled');
+                }
+            }
+        }, { passive: true });
+
         document.addEventListener('DOMContentLoaded', () => {
             const prevBtn = document.getElementById('carousel-prev');
             const nextBtn = document.getElementById('carousel-next');
